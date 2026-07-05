@@ -1,8 +1,5 @@
 {
   "appId": "com.chenle02.mathchallenge24",
   "appName": "24 Math Challenge",
-  "webDir": ".",
-  "server": {
-    "androidScheme": "https"
-  }
+  "webDir": "www"
 }
