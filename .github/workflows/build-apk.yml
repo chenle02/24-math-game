@@ -27,6 +27,16 @@ jobs:
       - name: Install dependencies
         run: npm install
 
+      - name: Build Capacitor config
+        run: |
+          cat > capacitor.config.json <<'EOF'
+          {
+            "appId": "com.chenle02.mathchallenge24",
+            "appName": "24 Math Challenge",
+            "webDir": "www"
+          }
+          EOF
+
       - name: Generate Android project
         run: npx cap add android
 
